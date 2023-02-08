@@ -1,24 +1,294 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Uy5-IP-k2n">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Paige-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="About_Me_Lab_Chapter_3_8" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SunglassesPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="a1W-xI-U3t">
+                                <rect key="frame" x="16" y="46.666666666666686" width="361" height="759"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="759" id="888-Rb-KYi"/>
+                                    <constraint firstAttribute="width" constant="361" id="L2R-eq-QcG"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="a1W-xI-U3t" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4ko-JJ-5iQ"/>
+                            <constraint firstItem="a1W-xI-U3t" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="vcy-3K-gpy"/>
+                        </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Paige" selectedImage="person.circle.fill" catalog="system" id="o4V-dX-XsY"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-559.5419847328244" y="703.52112676056345"/>
+        </scene>
+        <!--Hobbies-->
+        <scene sceneID="Rn3-de-35w">
+            <objects>
+                <viewController id="kOd-pj-eZm" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OaU-Uh-sjw">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="-5" translatesAutoresizingMaskIntoConstraints="NO" id="apN-hI-Ke9">
+                                <rect key="frame" x="56.666666666666657" y="76" width="280" height="700"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i7S-OV-7eS">
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="178.66666666666666"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Skiing" translatesAutoresizingMaskIntoConstraints="NO" id="o4b-74-Hnp">
+                                                <rect key="frame" x="0.0" y="0.0" width="280" height="178.66666666666666"/>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="o4b-74-Hnp" firstAttribute="centerX" secondItem="i7S-OV-7eS" secondAttribute="centerX" id="hZF-jw-fIc"/>
+                                            <constraint firstItem="o4b-74-Hnp" firstAttribute="centerY" secondItem="i7S-OV-7eS" secondAttribute="centerY" id="hxa-aS-eCm"/>
+                                            <constraint firstAttribute="width" constant="280" id="jqE-sB-z3v"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oR3-MQ-zjD">
+                                        <rect key="frame" x="0.0" y="173.66666666666663" width="280" height="179"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rodeo - kenna, ellie, wes" translatesAutoresizingMaskIntoConstraints="NO" id="kLX-Zx-hbp">
+                                                <rect key="frame" x="0.0" y="0.0" width="280" height="179"/>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="kLX-Zx-hbp" firstAttribute="centerY" secondItem="oR3-MQ-zjD" secondAttribute="centerY" id="8Id-mt-slE"/>
+                                            <constraint firstItem="kLX-Zx-hbp" firstAttribute="centerX" secondItem="oR3-MQ-zjD" secondAttribute="centerX" id="9va-eN-fWW"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xKu-NG-Naf">
+                                        <rect key="frame" x="0.0" y="347.66666666666669" width="280" height="178.66666666666669"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Piano Students" translatesAutoresizingMaskIntoConstraints="NO" id="bUd-Ah-AEc">
+                                                <rect key="frame" x="0.0" y="0.0" width="280" height="178.66666666666666"/>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="bUd-Ah-AEc" firstAttribute="centerY" secondItem="xKu-NG-Naf" secondAttribute="centerY" id="inr-Va-9jy"/>
+                                            <constraint firstItem="bUd-Ah-AEc" firstAttribute="centerX" secondItem="xKu-NG-Naf" secondAttribute="centerX" id="k83-Mo-xfp"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HJC-Pf-OHj">
+                                        <rect key="frame" x="0.0" y="521.33333333333337" width="280" height="178.66666666666663"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mountain Scene" translatesAutoresizingMaskIntoConstraints="NO" id="gNE-HP-YMU">
+                                                <rect key="frame" x="0.0" y="0.0" width="280" height="178.66666666666666"/>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="gNE-HP-YMU" firstAttribute="centerX" secondItem="HJC-Pf-OHj" secondAttribute="centerX" id="LqP-25-cpm"/>
+                                            <constraint firstItem="gNE-HP-YMU" firstAttribute="centerY" secondItem="HJC-Pf-OHj" secondAttribute="centerY" id="uMF-wf-r7h"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="680" id="nSV-S3-sSW"/>
+                                    <constraint firstAttribute="height" constant="700" id="wWA-oF-ZIi"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="iRY-Bc-i19"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="apN-hI-Ke9" firstAttribute="centerY" secondItem="OaU-Uh-sjw" secondAttribute="centerY" id="vVe-Cw-trl"/>
+                            <constraint firstItem="apN-hI-Ke9" firstAttribute="centerX" secondItem="OaU-Uh-sjw" secondAttribute="centerX" id="zQf-RT-Vqy"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Hobbies" selectedImage="figure.skiing.downhill" catalog="system" id="qPk-4m-yvp"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dxB-HO-ZaY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="205.34351145038167" y="703.52112676056345"/>
+        </scene>
+        <!--Fun Facts-->
+        <scene sceneID="ogi-pI-Low">
+            <objects>
+                <viewController id="Wpi-Aq-LP5" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YTP-n3-JAA">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="7vv-W2-VR8">
+                                <rect key="frame" x="16" y="59" width="361" height="710"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="zaa-94-UGU">
+                                        <rect key="frame" x="0.0" y="0.0" width="361" height="177.66666666666666"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I throw a pretty good kid party" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tII-Cu-GGc">
+                                                <rect key="frame" x="0.0" y="0.0" width="178.66666666666666" height="177.66666666666666"/>
+                                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="29"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Party" translatesAutoresizingMaskIntoConstraints="NO" id="PUm-C4-pe1">
+                                                <rect key="frame" x="182.66666666666663" y="0.0" width="178.33333333333337" height="177.66666666666666"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="B8T-25-JLm">
+                                        <rect key="frame" x="0.0" y="177.66666666666663" width="361" height="177.33333333333337"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cat haha" translatesAutoresizingMaskIntoConstraints="NO" id="f7s-WV-maL">
+                                                <rect key="frame" x="0.0" y="0.0" width="178.66666666666666" height="177.33333333333334"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My cat is only nice to me when I feed her treats" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9gD-zJ-mfV">
+                                                <rect key="frame" x="182.66666666666663" y="0.0" width="178.33333333333337" height="177.33333333333334"/>
+                                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="29"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="I1f-pp-mFD">
+                                        <rect key="frame" x="0.0" y="355" width="361" height="177.66666666666663"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I haven't worn the same outfit since October" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IfF-2D-8bG">
+                                                <rect key="frame" x="0.0" y="0.0" width="178.66666666666666" height="177.66666666666666"/>
+                                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="29"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Favorite Outfit" translatesAutoresizingMaskIntoConstraints="NO" id="EbW-Tj-ohO">
+                                                <rect key="frame" x="182.66666666666663" y="0.0" width="178.33333333333337" height="177.66666666666666"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="cvE-rx-J7K">
+                                        <rect key="frame" x="0.0" y="532.66666666666663" width="361" height="177.33333333333337"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Sashes at the wedding" translatesAutoresizingMaskIntoConstraints="NO" id="UEl-y3-YPe">
+                                                <rect key="frame" x="0.0" y="0.0" width="178.66666666666666" height="177.33333333333334"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I can tie a mean decorative chair sash" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lvn-K1-GC5">
+                                                <rect key="frame" x="182.66666666666663" y="0.0" width="178.33333333333337" height="177.33333333333334"/>
+                                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="29"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="Lvn-K1-GC5" secondAttribute="trailing" id="PFL-Ci-ZGT"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Dgd-Z9-pqT"/>
+                        <color key="backgroundColor" red="0.90066148787475264" green="0.96476769625118408" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="bottomMargin" secondItem="7vv-W2-VR8" secondAttribute="bottom" id="Af9-kr-Bge"/>
+                            <constraint firstAttribute="topMargin" secondItem="7vv-W2-VR8" secondAttribute="top" id="IzQ-rY-Nlg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="7vv-W2-VR8" secondAttribute="trailing" id="jgT-tJ-lc7"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="7vv-W2-VR8" secondAttribute="leading" id="tXC-xP-1lN"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Fun Facts" image="info.circle.fill" catalog="system" id="fCx-1q-CYi"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="edf-HG-wj6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1031.2977099236641" y="703.52112676056345"/>
+        </scene>
+        <!--Bio-->
+        <scene sceneID="EDX-cd-RXI">
+            <objects>
+                <viewController id="qHI-KY-AVs" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="27a-Dd-XlG">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="f9W-Nt-k0a">
+                                <rect key="frame" x="31.666666666666657" y="101" width="330" height="650"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Siblings" translatesAutoresizingMaskIntoConstraints="NO" id="GtZ-oS-dkJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="330" height="600"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I love skiing, playing the piano, and eating peaches" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Ht-3s-A99">
+                                        <rect key="frame" x="0.0" y="610" width="330" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="WHb-w6-E20"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="dEj-c5-i0Z"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="330" id="OQA-a7-B99"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="eLs-v0-vW8"/>
+                        <color key="backgroundColor" red="0.35578822026022305" green="0.018394628890038473" blue="0.12418448053430001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="f9W-Nt-k0a" firstAttribute="centerX" secondItem="27a-Dd-XlG" secondAttribute="centerX" id="0HG-20-v20"/>
+                            <constraint firstItem="f9W-Nt-k0a" firstAttribute="top" secondItem="eLs-v0-vW8" secondAttribute="top" constant="42" id="5fN-uo-b4G"/>
+                            <constraint firstItem="f9W-Nt-k0a" firstAttribute="centerY" secondItem="27a-Dd-XlG" secondAttribute="centerY" id="9qt-O0-LST"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Bio" selectedImage="pianokeys" catalog="system" id="zir-qa-jaG"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pXP-Cs-PRR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1968.7022900763359" y="703.52112676056345"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="bzA-iM-5G6">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Uy5-IP-k2n" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="GNO-nr-LTA">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <tabBarAppearance key="scrollEdgeAppearance"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="bde-3Q-UzT"/>
+                        <segue destination="qHI-KY-AVs" kind="relationship" relationship="viewControllers" id="nLU-ws-fjI"/>
+                        <segue destination="kOd-pj-eZm" kind="relationship" relationship="viewControllers" id="VPH-gy-nOA"/>
+                        <segue destination="Wpi-Aq-LP5" kind="relationship" relationship="viewControllers" id="ebX-KU-3KK"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="by6-Im-h1Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1486.2595419847328" y="703.52112676056345"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Cat haha" width="768" height="1024"/>
+        <image name="Favorite Outfit" width="619" height="1270"/>
+        <image name="Mountain Scene" width="1024" height="768"/>
+        <image name="Party" width="1024" height="768"/>
+        <image name="Piano Students" width="1024" height="768"/>
+        <image name="Rodeo - kenna, ellie, wes" width="1024" height="768"/>
+        <image name="Sashes at the wedding" width="768" height="1024"/>
+        <image name="Siblings" width="666" height="1179"/>
+        <image name="Skiing" width="3983" height="2272"/>
+        <image name="SunglassesPhoto" width="3022" height="3681"/>
+        <image name="figure.skiing.downhill" catalog="system" width="126" height="128"/>
+        <image name="info.circle.fill" catalog="system" width="128" height="123"/>
+        <image name="person.circle.fill" catalog="system" width="128" height="123"/>
+        <image name="pianokeys" catalog="system" width="128" height="93"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
